@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169902833-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-169902833-1');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Nevesco</title>
+    <!-- Google Maps-->
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/logo-favicon.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Third party plugin CSS-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img
+            class="logo-nevesco"
+            src="./assets/img/Logo-Nevesco-Cores_sem-fundo-nevesco-cinz.png"
+            alt="nevesco"/></a
+        ><button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">INÍCIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="formularios.html">FORMULÁRIOS</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown ">
+                <button
+                  class="btn dropdown-toggle nav-link js-scroll-trigger"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  PARCERIAS / PROTOCOLOS
+                </button>
+                <div class="dropdown-menu bg-opacity" aria-labelledby="dropdownMenuButton">
+                  <a
+                    class="dropdown-item text-red-nevesco"
+                    href="./parceriasProtocolos/sediadas.html"
+                    >Empresas sediadas no concelho de Cascais
+                  </a>
+                  <a
+                    class="dropdown-item text-red-nevesco"
+                    href="./parceriasProtocolos/naoSediadas.html"
+                    >Empresas fora do Concelho de Cascais</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown ">
+                <button
+                  class="btn dropdown-toggle nav-link js-scroll-trigger"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  SERVIÇOS
+                </button>
+                <div class="dropdown-menu bg-opacity" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item text-red-nevesco" href="./serviços/contabilidade.html"
+                    >Contabilidade</a
+                  >
+                  <a class="dropdown-item text-red-nevesco" href="./serviços/assistenciaFiscal.html"
+                    >Assistência Fiscal</a
+                  >
+                  <a
+                    class="dropdown-item text-red-nevesco"
+                    href="./serviços/gestaoAdministrativa.html"
+                    >Gestão Administrativa e Fiscal de RH</a
+                  >
+                  <a
+                    class="dropdown-item text-red-nevesco"
+                    href="./serviços/ServiçosAdministrativos.html"
+                    >Serviços Administrativos</a
+                  >
+                  <a
+                    class="dropdown-item text-red-nevesco"
+                    href="./serviços/consulturiaFiscalGestão.html"
+                    >Consulturia Fiscal e de Gestão</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="contacts.html">CONTACTOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center text-center">
+          <div class="col-lg-10 align-self-end">
+            <img
+              class="logo-img responsive"
+              src="/assets/img/Logo-Nevesco-Cores_sem-fundo-meiobranco.png"
+            />
+
+            <hr class="divider my-4" />
+          </div>
+          <div class="col-lg-8 align-self-baseline">
+            <p class="text-white-75 font-weight-light mb-5">
+              A NEVESCO é uma das mais antigas empresas de contabilidade do país e, seguramente, a
+              mais antiga do concelho de Cascais
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- About-->
+    <section class="page-section bg-nevesco" id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 mb-5 text-center">
+            <h2 class="text-white mt-0">NEVESCO</h2>
+            <h5 class="mt-2 mb-4 text-center text-white-50">
+              <i>“Fazer hoje melhor do que ontem”</i>
+            </h5>
+            <hr class="divider light my-4" />
+            <p class="text-white-50 mb-4">
+              Fundada em 1 de Julho de 1964 têm vocacionado os seus serviços no apoio às pequenas e
+              médias empresas. Ao longo de mais de 50 anos de actividade a NEVESCO foi-se
+              modernizando, numa adaptação contínua às novas realidades contabilísticas e fiscais,
+              sempre com o enfoque na total satisfação dos seus clientes, razão pela qual se orgulha
+              de manter em carteira ainda alguns dos seus primeiros clientes. Nestas cinco décadas
+              de actividade, a NEVESCO adquiriu no seu mercado, um estatuto de credibilidade e
+              confiança que permite garantir aos seus clientes um grau de confidencialidade total no
+              que respeita às informações disponibilizadas, salvaguardando todos os seus dados.
+            </p>
+          </div>
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">A NOSSA MISSÃO</h2>
+            <hr class="divider light my-4" />
+            <p class="text-white-50 mb-4">
+              Fornecer apoio técnico na área de contabilidade, fiscalidade e gestão administrativa e
+              fiscal de recursos humanos a organizações colectivas privadas e a profissionais
+              liberais, de forma a promover o cumprimento dos princípios contabilisticos, do SNC –
+              Sistema de Normalização Contabilísitica e da legislação fiscal e laboral a que estão
+              obrigadas(os), da maneira que melhor se adequar às suas necessidades e maior valor
+              acrescentado trouxer aos seus objectivos institucionais individuais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact-->
+    <section class="page-section bg-services" id="contact">
+      <div class="container ">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="mt-0 text-red-nevesco">Entre em contacto connosco</h2>
+            <hr class="divider my-4" />
+            <p class="text-muted mb-5">
+              Tem alguma duvida? Pretende criar uma parceria com a NEVESCO? Entre em contacto com
+              connosco e esclareca todas as suas duvidas.
+            </p>
+            <div>
+              <!--   Email   -->
+              <form
+                id="fs-frm"
+                name="simple-contact-form"
+                accept-charset="utf-8"
+                action="https://formspree.io/meaud23@gmail.com"
+                method="POST"
+              >
+                <fieldset id="fs-frm-inputs">
+                  <div class="form-group text-red-nevesco">
+                    <label for="full-name">Nome:</label>
+                    <input
+                      placeholder="Escreva aqui o seu nome"
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="full-name"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group text-red-nevesco">
+                    <label for="email-address">Email:</label>
+                    <input
+                      name="_replyto"
+                      placeholder="Escreva aqui o seu Email"
+                      type="email"
+                      class="form-control"
+                      id="email-address"
+                      required=""
+                      aria-describedby="emailHelp"
+                    />
+                    <small id="emailHelp" class="form-text text-muted text-red-nevesco"
+                      >Nunca partilharemos o seu endereço de email</small
+                    >
+                  </div>
+                  <div class="form-group text-red-nevesco">
+                    <label for="message" id="inputMessage" name="message">A sua mensagem:</label>
+                    <textarea
+                      name="message"
+                      placeholder="Escreva aqui a sua mensagem"
+                      class="form-control"
+                      id="message"
+                      rows="5"
+                      required=""
+                    ></textarea>
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      id="email-subject"
+                      value="Contact Form Submission"
+                    />
+                  </div>
+                </fieldset>
+                <button type="submit" value="Submit" class="btn btn-primary mb-5">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+            <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+            <div>+351 21 457 24 98</div>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 text-muted"></i
+            ><a class="d-block">geral@nevesco.pt </a>
+          </div>
+        </div>
+        <div id="map"></div>
+
+        <script>
+          // Google Maps
+          // Initialize and add the map
+          function initMap() {
+            // The location of Nevesco
+            var nevesco = { lat: 38.713746, lng: -9.409805 };
+            // The map, centered at Nevesco
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 14,
+              center: nevesco,
+            });
+            // The marker, positioned at Nevesco
+            var marker = new google.maps.Marker({ position: nevesco, map: map });
+          }
+          var APIKEY = 'AIzaSyBMhVela2MGIDl-vT-cPQse1u_6R113Ecc';
+        </script>
+
+        <script
+          async
+          defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMhVela2MGIDl-vT-cPQse1u_6R113Ecc&callback=initMap"
+        ></script>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mb-1">
+            <!-- Contact details -->
+            <h5 class="font-weight-bold text-uppercase mb-5">Morada</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <i class="fas fa-home mr-3"></i>
+                  Rua do Vale, Nº69 B Amoreira 2645-239 Alcabideche
+                </p>
+              </li>
+            </ul>
+            <h5 class="font-weight-bold text-uppercase mb-3 mt-4">Contactos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <p><i class="fas fa-envelope mr-3"></i>geral@nevesco.pt</p>
+              </li>
+              <li>
+                <p><i class="fas fa-phone mr-3"></i>+351 21 457 24 98</p>
+              </li>
+              <li>
+                <h5 class="font-weight-bold text-uppercase mb-3 mt-4">Funcionamento</h5>
+
+                <p>
+                  Todos os dias úteis das 9h às 12h30m e das 14H às 18h30m
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mb-5">Links Úteis</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a href="https://www.portugal.gov.pt/pt/gc21">Ministério das Finanças</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://www.portaldasfinancas.gov.pt/pt/home.action"
+                    >Portal das Finanças</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="http://www.seg-social.pt/inicio">Segurança Social</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://www.apeca.pt/modules/home">APECA</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://eportugal.gov.pt/">Portal do Cidadão</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://www.irn.mj.pt/IRN/sections/inicio">DGRN</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://dre.pt/">Diário da República Electrónico</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://justica.gov.pt/Servicos/Empresa-na-Hora">Empresa na Hora</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mb-4">Outras Informações</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p>
+                  <a href="./links/inicioActividade.html">Inicio de Actividade</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="./links/pacoteSalarial.html">Pacote Salarial</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="condiçoesUtilizaçao.html">Condições de Utilização</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="politicaPrivacidade.html">Politica de Privacidade</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="./documentos/DOSSIER_DOCUM_OBRIGATORIA_CONTEUDO_V2 (1).pdf"
+                    >Dossier Documentação Obrigatória</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mb-1 ml-4">
+            <!-- Content -->
+
+            <h5 class="font-weight-bold text-uppercase mb-5">Info</h5>
+            <p>Sociedade Anónima</p>
+            <p>Capital Social : 60.000,00 €</p>
+            <p>
+              NIPC 500 849 226
+            </p>
+            <p>Registada na Conservatória do Registo Comercial de Cascais com o número 419</p>
+            <div class="logo-pme-container">
+              <img class="logo-pme-lider" src="./assets/img/pme-lider-16x9.jpg" alt="PME lider" />
+              <img
+                class="logo-pme-excelencia"
+                src="./assets/img/logo_PME_excelencia2010.jpg"
+                alt="pme excelencia"
+              />
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+            <!-- Social buttons -->
+            <p class="font-weight-bold text-uppercase mb-3 text-red-nevesco">Siga-nos</p>
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/NevescoSA/"
+              type="button"
+              class="btn-floating btn-fb "
+            >
+              <img
+                class="icon"
+                src="./assets/img/1200px-Facebook_Icon_(Single_Path_-_Transparent__f_).svg.png"
+                alt="facebook"
+              />
+            </a>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        <small>
+          © 2020 Copyright:
+          <a href="#"> NEVESCO - Escritório Central de Contabilidade, S.A.</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Developed by: <a href="">Pedro Meaud</a></small
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
